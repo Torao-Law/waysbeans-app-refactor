@@ -2,10 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Button = (props) => {
-    const {className, isPrimary, isLarge, isMedium, hasShadow, onClick, children} = props
-    const primaryStyle = "bg-lime-950 text-white border-lime-950";
-    const secondaryStyle = "border-lime-950 text-lime-950";
-    const defaultStyle = "border-2 border-solid rounded px-8 py-0 m-0 font-medium";
+    const {className, isPrimary, isLarge, isMedium, hasShadow, onClick, children, style} = props
+    const primaryStyle = "bg-isPrimary text-white border-isPrimary";
+    const secondaryStyle = "border-isPrimary text-isPrimary";
+    const defaultStyle = "border-2 border-solid rounded px-8 py-2 m-0 font-medium";
 
     const buttonClasses = [
         isPrimary ? `${primaryStyle}  ${defaultStyle}` : `${secondaryStyle} ${defaultStyle}`,
@@ -19,7 +19,7 @@ const Button = (props) => {
     };
 
     return (
-        <button className={buttonClasses} onClick={handleClick}>
+        <button className={buttonClasses} onClick={handleClick} style={style}>
             {children}
         </button>
     );

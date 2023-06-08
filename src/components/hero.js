@@ -17,11 +17,11 @@ export default function hero() {
                 </div>
                 
                 <div>  
-                    <div className="absolute w-2/5 h-2/5 right-16 pr-20 top-36 mt-10 z-10">
-                        <img className="w-full h-full object-none" src={Hero} alt="hero"/>
-                    </div>
                     <div className="absolute w-96 h-28 start-2/4 top-96 mt-8">
                         <img className="w-full h-full" src={Line} alt="line"/>
+                    </div>
+                    <div className="absolute w-2/5 h-2/5 right-16 pr-20 top-36 mt-10">
+                        <img className="w-full h-full object-none" src={Hero} alt="hero"/>
                     </div>
                 </div>
             </div>
